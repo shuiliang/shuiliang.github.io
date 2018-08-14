@@ -1,0 +1,75 @@
+# Site settings 配置站点
+title: '下午茶' # 你的博客网站标题
+description: 'iOS开发者/伪极客/灵魂摄影师，热爱技术&设计。 在平坦的路面上曲折前行。' # 站点描述
+keyword: '黄水亮, 黄水亮的独立博客, 廖柯宇的博客, iOS开发, iOS博客, iOS'  # 网站关键词
+url: 'http://www.hsl1993.com' # 站点url
+
+
+# if you don't need baseurl, you should leave this value blank.
+baseurl: ''
+
+# Navigation links
+nav:
+  home: '/'
+  tags: '/tags.html'
+
+# Footer
+footer:
+  since: 2017
+
+# Author 配置博主信息
+author: '黄水亮'
+nickname: '算云烟'
+bio: '在平坦的路面上曲折前行'
+avatar: '/assets/img/profile.png'
+
+# Search
+search: true
+
+# Night mode
+nightMode: flase
+
+# Comments 评论功能
+
+# MathJax 公式支持 by Ray-Eldath
+mathjax: true
+
+# Share
+social-share: true
+social-share-items: ['wechat', 'weibo', 'douban', 'twitter']
+
+# theme color 主题皮肤
+theme-color: 'default'  # pink or default
+
+# Post header background patterns (when the post no cover): circuitBoard, overlappingCircles, food, glamorous, ticTacToe, seaOfClouds
+postPatterns: 'circuitBoard'
+
+# SNS settings 配置社交网站
+# url: email, weibo, zhihu, twitter, instagram, juejin, github, douban, facebook, dribble, uicn, jianshu, medium, linkedin
+sns:
+  weibo: 'https://weibo.com/2108109984'
+  jianshu: 'https://www.jianshu.com/u/11a3a493215a'
+
+# Tags 设置标签
+recommend-tags: true # 是否显示推荐标签
+recommend-condition-size: 12 # 推荐标签个数限制
+
+# Build settings
+paginate: 6
+paginate_path: 'page:num'
+exclude: ['node_modules', 'dev', 'package.json', 'gulpfile.js', '.gitignore', 'README.md']
+
+# Markdown
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+
+# RSS
+RSS: false
+
+# Permalink
+permalink: /:year/:month/:day/:title.html
+
+# Plugins
+plugins: [jekyll-paginate]
