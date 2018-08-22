@@ -80,7 +80,7 @@ shuiMac:~ huangshuiliang$ pbcopy < ~/.ssh/id_rsa.pub
 ![](/assets/img/details/2018-08-21/1.png)![](/assets/img/details/2018-08-21/2.png)
 
 
-### 3.设置私钥代理
+## 3.设置私钥代理
 
 ```swift
 //key-1
@@ -91,7 +91,7 @@ ssh-add ~/.ssh/id_rsa_new
 
 ```
 
-### 4.增加/修改.ssh/config配置文件
+## 4.增加/修改.ssh/config配置文件
 
 在~/.ssh目录下添加config配置文件用于区分多个SSH-Key
 
@@ -121,7 +121,7 @@ IdentityFile ~/.ssh/id_rsa_new
 # IdentityFile : 指明上面User对应的identityFile路径
 ```
 
-### 5.验证结果
+## 5.验证结果
 
 ```swift
 //key-1
