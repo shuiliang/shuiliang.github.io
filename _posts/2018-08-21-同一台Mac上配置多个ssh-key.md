@@ -55,9 +55,9 @@ The key's randomart image is:
 
 ```
 
-## 2.git服务器设置公钥
+## 2.Git服务器设置 SSH-Key
 
-### 1.命令行复制生成的SSH-Key
+#### 1.命令行复制生成的 SSH-Key
 
 ```swift
 //key-1
@@ -73,14 +73,14 @@ shuiMac:~ huangshuiliang$ pbcopy < ~/.ssh/id_rsa_new
 shuiMac:~ huangshuiliang$ pbcopy < ~/.ssh/id_rsa.pub
 ```
 
-### 2.登录git服务器，配置公钥。
+#### 2.登录 Git 服务器，配置 SSH-Key
 
 以Github为例,点击右上角Settings，进入到Personal settings ->SSH and GPG keys -> New SSH Key, 粘贴公钥内容即可。
 
 ![](/assets/img/details/2018-08-21/1.png)![](/assets/img/details/2018-08-21/2.png)
 
 
-## 3.设置私钥代理
+## 3.设置 SSH-Key 代理
 
 ```swift
 //key-1
@@ -91,9 +91,9 @@ ssh-add ~/.ssh/id_rsa_new
 
 ```
 
-## 4.增加/修改.ssh/config配置文件
+## 4.增加/修改 .ssh/config 配置文件
 
-在~/.ssh目录下添加config配置文件用于区分多个SSH-Key
+在 ~/.ssh 目录下添加 config 配置文件用于区分多个 SSH-Key
 
 ![](/assets/img/details/2018-08-21/3.png)![](/assets/img/details/2018-08-21/4.png)
 
@@ -132,4 +132,11 @@ ssh -T git@gitee.com
 
 ```
 要是输出提示`Hi xxx! You've successfully authenticated, but GitHub does not provide shell access.`说明 SSH-Key 配置成功！
+
+- key-1事例:
+
+```swift
+shuiMac:.ssh huangshuiliang$ ssh -T git@github.com
+Hi shuiliang! You've successfully authenticated, but GitHub does not provide shell access.
+```
 
