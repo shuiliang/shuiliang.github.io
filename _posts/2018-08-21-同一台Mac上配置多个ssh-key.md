@@ -1,11 +1,11 @@
 ---
 layout: post
-title: ' 同一台Mac上配置多个ssh-key'
-subtitle: '配置多个ssh-key'
-date: 2018-08-21-同一台Mac上配置多个ssh-key
+title: ' 同一台Mac上配置多个 SSH-Key'
+subtitle: '配置多个SSH-Key'
+date: 2018-08-21-同一台Mac上配置多个SSH-Key
 author: 黄水亮
 cover: 'https://cdna.artstation.com/p/assets/images/images/008/107/456/large/lee-souder-rg-001.jpg?1510539788'
-tags: Git  配置多个ssh-key
+tags: Git  SSH-Key
 ---
 
 Secure Shell（安全外壳协议，简称SSH）是一种加密的网络传输协议，可在不安全的网络中为网络服务提供安全的传输环境；SSH-Key 可以方便的登录到 SSH 服务器，而无需输入密码。由于无需发送密码到网络中,，被认为是更加安全的方式。由于我在公司使用的是Git进行代码管理，而在公司电脑上有时需要访问 [Github](https://github.com/shuiliang)和 [Gitee](https://gitee.com/shuiliang) 。所以，在同一台机器上配置两个 SSH-Key 很有必要。
@@ -131,5 +131,5 @@ ssh -T git@github.com
 ssh -T git@gitee.com
 
 ```
-要是输出提示`Hi xxx! You've successfully authenticated, but GitHub does not provide shell access.`说明 SSH-Key 配置成功。
+要是输出提示`Hi xxx! You've successfully authenticated, but GitHub does not provide shell access.`说明 SSH-Key 配置成功！
 
