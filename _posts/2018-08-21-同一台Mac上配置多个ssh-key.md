@@ -75,7 +75,7 @@ shuiMac:~ huangshuiliang$ pbcopy < ~/.ssh/id_rsa.pub
 
 #### 2.登录 Git 服务器，配置 SSH-Key
 
-以Github为例,点击右上角Settings，进入到Personal settings ->SSH and GPG keys -> New SSH Key, 粘贴公钥内容即可。
+以Github为例,点击右上角Settings，进入到Personal settings ->SSH and GPG keys -> New SSH Key, 粘贴SSH-Key即可。
 
 ![](/assets/img/details/2018-08-21/1.png)![](/assets/img/details/2018-08-21/2.png)
 
