@@ -12,7 +12,9 @@ baseurl: ''
 nav:
   home: '/'
   tags: '/tags.html'
-
+  markmap: '/markmap.html'
+  分类: '/tags.html'
+    
 # Footer
 footer:
   since: 2017
